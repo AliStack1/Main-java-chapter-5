@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[]args) {
 
-    //Chapter: 5 (Loop control intruction)
+                                          //Chapter: 5 (Loop control intruction)
 
            // while loop
 
@@ -132,5 +132,93 @@ for (int i=1;i<=10;i++){
     sum += n*i;
 }
 System.out.println(sum);*/
+
+
+                                               // CHAPTER: 6 (ARRAYS)
+
+      // Array write 3 diffrent style
+
+/*int[] marks = new int[5];
+marks[0] = 20;
+marks[1] = 40;
+marks[2] = 60;
+marks[3] = 80;
+marks[4] = 100;
+System.out.println(marks[4]);*/
+
+//int[] marks = {10,20,30,40,50,60};         // name.length(length of number)
+//System.out.println(marks.length);
+//System.out.println(marks[2]);
+
+      // Displaying on array(using Naive Way)
+
+/*int[] marks = {10,20,30,40,50};
+//System.out.println(marks.length);
+System.out.println(marks[0]);
+System.out.println(marks[1]);
+System.out.println(marks[2]);
+System.out.println(marks[3]);
+System.out.println(marks[4]);
+       //OR
+System.out.println("Using for loop");
+for(int i=0;i<marks.length;i++){
+System.out.println(marks[i]);
+}
+
+System.out.println("Using for loop in Reverse order");
+for(int i=marks.length -1;i>=0;i--){
+System.out.println(marks[i]);
+}
+      // Using for-each-loop
+
+System.out.println("Using for each loop");
+for(int element: marks){
+    System.out.println(element);
+}*/
+
+ // MULTIDIMENTIONAL ARRAY
+
+/*int [] marks;  // 1-D array
+int [] [] flats;  // 2-D array
+flats = new int [2][3];
+flats[0][0] = 101;
+flats[0][1] = 102;
+flats[0][2] = 103;
+flats[1][0] = 104;
+flats[1][1] = 105;
+flats[1][2] = 106;
+for(int i=0;i<flats.length;i++){
+    for(int j=0;j<flats[i].length;j++){
+        System.out.print(flats[i][j]);
+    System.out.print(" ");
+    }
+System.out.println("");
+}*/
+      // Practice Qs:1
+
+/*float[] marks = {10.5f,20.5f,30.6f,40.9f};
+float sum = 0;
+for(float element:marks){
+    sum = sum + element;
+}
+System.out.println("The sum of this element : " + sum);*/
+
+   //Practice Qs:2 
+
+float[] marks = {10,20,30,40,50};
+float num = 30;
+boolean Inmarks = false;
+for(float element:marks){
+    if(num==element);
+    Inmarks = true;
+    break;
+}
+if(Inmarks){
+    System.out.println("The value present in array");
+}
+else{
+    System.out.println("the value are not present in array");
+}
+
 }
     }

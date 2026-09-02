@@ -1,5 +1,5 @@
-public class Main {
-    public static void main(String[]args) {
+//public class Main {
+   // public static void main(String[]args) {
 
                                           //Chapter: 5 (Loop control intruction)
 
@@ -205,7 +205,7 @@ System.out.println("The sum of this element : " + sum);*/
 
    //Practice Qs:2 
 
-float[] marks = {10,20,30,40,50};
+/*float[] marks = {10,20,30,40,50};
 float num = 30;
 boolean Inmarks = false;
 for(float element:marks){
@@ -218,7 +218,53 @@ if(Inmarks){
 }
 else{
     System.out.println("the value are not present in array");
-}
+}*/
 
-}
+           // Chapter: 7 Methods In Java
+
+/*public class Main {
+static int logic(int x, int y){
+    int z;
+      if(x>y){
+            z = x + y;
+        }
+        else{
+            z = (x + y)*5;
+        }  
+        return z;
     }
+    public static void main(String[]args) {
+        int a = 5;
+        int b = 7;
+        int c;
+        // Calling the logic method
+        // Method invocation using object creation
+       // main obj = new main();
+        //c = obj.logic(a,b);
+        c = logic(a,b);
+    int a1 = 7;
+    int b1 = 5;
+    int c1;
+    c1 = logic(a1,b1);
+    System.out.println(c);
+    System.out.println(c1);*/
+
+public class Main {
+    static void change(int a){
+        a = 98;
+    }
+    static void change1(int [] arr){
+        arr[0] = 98;
+    }
+public static void main(String[]args) {
+    //Case:1 changing the integer
+    int x = 45;
+    change(x);
+    System.out.println("The value of x after change is: " + x);
+
+  // Case:2 changing the array
+int [] marks = {53,50,60,70,80};
+change1(marks);
+System.out.println("The value of marks after change is: " + marks[0]);
+}
+}

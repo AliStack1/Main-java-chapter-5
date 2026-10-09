@@ -220,7 +220,7 @@ else{
     System.out.println("the value are not present in array");
 }*/
 
-           // Chapter: 7 Methods In Java
+                             // Chapter: 7 Methods In Java
 
 /*public class Main {
 static int logic(int x, int y){
@@ -249,7 +249,7 @@ static int logic(int x, int y){
     System.out.println(c);
     System.out.println(c1);*/
 
-public class Main {
+/*public class Main {
     static void change(int a){
         a = 98;
     }
@@ -265,6 +265,88 @@ public static void main(String[]args) {
   // Case:2 changing the array
 int [] marks = {53,50,60,70,80};
 change1(marks);
-System.out.println("The value of marks after change is: " + marks[0]);
+System.out.println("The value of marks after change is: " + marks[0]);*/
+
+/*public class Main{
+    static int sum(int a,int b){
+        return a+b;
+    }
+    static int sum(int a,int b,int c){
+        return a+b+c;
+    }
+    static int sum(int a,int b,int c,int d){
+        return a+b+c+d;
+    }
+          OR
+   static int sum(int ...arr){
+    int result = 0;
+    for(int a:arr){    
+        result = result + a;
+    }
+    return result;
+   }
+    public static void main(String[]args){
+        System.out.println("The sum of Noting is::" + sum());
+        System.out.println("The sum of 4 and 5 is:" + sum(4,5));
+        System.out.println("The sum of 4 5 and 6 is:" + sum(4,5,6));
+        System.out.println("The sum of 4 56 and 7 is:" + sum(4,5,6,7));*/
+
+/*public class Main{
+     // Factorial (0) = 1
+     // Factorial (n) = n * factorial(n-1)
+     // Factorial (5) = 5 * 4 * 3 * 2 * 1 = 120
+     // Factorial (n) = n * n-1 * ....1
+     static int factorial(int n){
+        if(n==0 || n==1){
+            return 1;
+        }
+        else{
+            return n * factorial(n-1);
+        }
+     }
+    public static void main(String[]args){
+        System.out.println("The factorial is 5: " + factorial(5));
+    }
+}*/
+
+/*public class Fibonacci {
+    public static void main(String[] args) {
+
+        int n = 10;   // kitne terms print karne hain
+        int a = 0;
+        int b = 1;
+
+        System.out.print("Fibonacci Series: ");
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a + "");
+
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+    }
+}*/
+
+/*public class Main{
+static int factorial(int n){
+    if(n==0 || n==1){
+        return 1;
+    }
+    else{
+        int product = 1;
+    
+    for(int i=1;i<=n;i++){
+      product *= i;
+    }
+    return product;
+    }
 }
-}
+public static void main(String[]args){
+
+        int n = 4;
+System.out.println("The value of n is: " + factorial(n));
+System.out.println("The value of n is: " + factorial(4));
+
+    }
+}*/
